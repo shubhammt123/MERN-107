@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            /* display: grid; */
+            /* grid-template-columns: 1fr 2fr 2fr;
+            grid-template-rows: 100px 200px 200px 100px;
+            grid-template-areas: 
+            "header header header"
+            "sidebar content-1 content-1"
+            "sidebar content-2 content-3"
+            "footer footer footer"
+            ;
+            gap: 20px; */
+            /* width: 300px;
+            height: 300px;
+            background-color: cadetblue; */
+            /* transition: 2s ease-in-out; */
+        }
+
+        /* #container:hover{
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background-color: rgb(255, 0, 0);
+        } */
+
+
+        /* .box{
+            background-color: cadetblue;
+            border: 1px solid white;
+            width: 300px;
+        } */
+
+        /* #box-1{
+            grid-area: header;
+            background-color: blueviolet;
+        }
+
+        #box-2{
+            grid-area: sidebar;
+            background-color: burlywood;
+        }
+
+        #box-3{
+            grid-area: content-1;
+            background-color: cornflowerblue;
+        }
+
+        #box-4{
+            grid-area: content-2;
+            background-color: darkcyan;
+        }
+
+        #box-5{
+            grid-area: content-3;
+            background-color: darkkhaki;
+        }
+
+        #box-6{
+            grid-area: footer;
+            background-color: darksalmon;
+        } */
+
+        /* img{
+            width: 250px;
+            height: 300px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        h2{
+            color: gray;
+        }
+        p{
+            color: green;
+        }
+        #product-parent{
+            display: grid;
+            grid-template-columns: repeat(3,300px);
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(235, 235, 235);
+            padding: 20px;
+            box-shadow: 1px 1px 3px #d7d7d7;
+            transition: 0.3s ease-in-out;
+        }
+
+        .box:hover{
+            transform: scale(1.015);
+        } */
+
+        /* p:first-of-type{
+            background-color: blueviolet;
+        } */
+
+        /* p:last-of-type{
+            background-color: cadetblue;
+        } */
+
+        /* p:nth-of-type(2n){
+            background-color: yellow;
+        }
+
+        .item:first-child{
+            background-color: brown;
+        }
+
+        .item:last-child{
+            background-color: red;
+        }
+
+        li:nth-child(2n){
+            background-color: gray;
+        } */
+        /* p:only-child{
+            background-color: aqua;
+        } */
+         p:only-of-type{
+            background-color: aqua;
+         }
+    </style>
+</head>
+<body>
+
+        <!-- <div class="box" id="box-1">Header</div>
+        <div class="box" id="box-2">Sidebar</div>
+        <div class="box" id="box-3">Content-1</div>
+        <div class="box" id="box-4">Content-2</div>
+        <div class="box" id="box-5">Content-3</div>
+        <div class="box" id="box-6">Footer</div> -->
+        <!-- <div class="box" id="box-7">Box-7</div>
+        <div class="box" id="box-8">Box-8</div>
+        <div class="box" id="box-9">Box-9</div>
+        <div class="box" id="box-10">Box-10</div> -->
+
+
+    <!-- <div id="product-parent">
+        <div class="box">
+            <img src="https://plus.unsplash.com/premium_photo-1664392147011-2a720f214e01?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <h2>Title</h2>
+            <p>1000</p>
+        </div>
+        <div class="box"> <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="">
+            <h2>Title</h2>
+            <p>1000</p>
+        </div>
+        <div class="box">
+            <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-madebymath-90946.jpg&fm=jpg" alt="">
+            <h2>Title</h2>
+            <p>1000</p>
+        </div>
+    </div> -->
+    <!-- <div></div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nostrum pariatur laborum saepe voluptatem architecto accusantium vero quo! Tempora optio dolore dolorum molestias minima laborum. Suscipit quam non quis natus!</p>
+    <p>Lorem ipsum dolor sit.</p>
+
+    <div id="container">
+        <div></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquid at fugiat doloremque eligendi quod molestias eveniet, ipsa eaque a.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi dolorum aut fugiat nesciunt, voluptatum modi necessitatibus quis vitae, non quia labore, saepe suscipit dolorem perferendis voluptatibus vero. Minus, debitis consequatur.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate aliquam est ratione itaque eos asperiores ullam dolores repellendus maxime error.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae voluptas similique adipisci vitae dolores, quas culpa soluta perferendis et officiis est consequuntur, eligendi recusandae sit dolor dolore repudiandae fugiat quod.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam cum doloremque tempore aperiam eveniet at excepturi deleniti! Architecto porro ut provident eaque nam, rem possimus. Aliquid unde velit sequi sapiente.</p>
+    </div>
+
+    <div>
+        <div></div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit beatae, eum provident id quas, animi in consectetur similique accusamus, nisi debitis facere labore! Sit debitis quasi nesciunt, saepe dicta autem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos culpa illum maiores nam voluptatibus vitae provident odio iusto tempore architecto odit, perspiciatis temporibus expedita repellendus pariatur nulla autem sapiente.</p>
+    </div>
+    <div>
+        <h1>Heading</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste deserunt repudiandae magnam, perspiciatis autem possimus, quasi dicta reiciendis facere, nemo quia impedit! Facere a qui esse quidem, impedit quibusdam delectus.</p>
+    </div>
+
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ullam consequatur. Dignissimos, natus soluta suscipit laudantium obcaecati dolor, labore voluptate minus nobis quo quos veritatis ad, nihil nulla vero corrupti!</p>
+
+    <div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <p class="item">lorem4</p>
+        <p class="item">lorem4</p>
+        <p class="item">lorem4</p>
+        <p class="item">lorem4</p>
+        <p class="item">lorem4</p>
+        <div>Lorem ipsum dolor sit amet.</div>
+    </div>
+
+    <ul>
+        <li>Child-1</li>
+        <li>Child-2</li>
+        <li>Child-3</li>
+        <li>Child-4</li>
+        <li>Child-5</li>
+        <li>Child-6</li>
+        <li>Child-7</li>
+        <li>Child-8</li>
+        <li>Child-9</li>
+        <li>Child-10</li>
+    </ul> -->
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit harum, ipsam assumenda maiores saepe iusto voluptatibus quibusdam sapiente hic reiciendis vitae consequuntur. Id dolor dolore laboriosam, itaque facilis sit qui.</p>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto magni pariatur laborum dolores omnis, et blanditiis vitae expedita, a numquam debitis odit voluptatem cumque! Iste expedita quasi sequi corporis.</div>
+
+    </div>
+</body>
+</html>

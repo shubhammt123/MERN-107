@@ -1,0 +1,32 @@
+Pseudo Classes:-
+
+:first-child  
+:last-child  
+:nth-child(n)  
+:nth-last-child(n)  
+:first-of-type  
+:last-of-type  
+:nth-of-type(n)  
+:only-child  
+:only-of-type  
+:hover  
+:focus  
+:active  
+:visited  
+:link
+:checked  
+:disabled  
+:enabled  
+:required  
+:optional  
+:not(selector)  
+:empty  
+
+Pseudo Elements:-
+
+::first-line  
+::first-letter  
+::before  
+::after  
+::selection  
+::placeholder  

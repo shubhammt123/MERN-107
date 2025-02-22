@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :root{
+            --primary-background-color : aliceblue;
+            --secondary-background-color : rgb(234, 234, 234);
+            --primary-text-color : black;
+            --primary-blog-text-color : #444444;
+            --secondary-blog-text-color : grey;
+            --blog-shadow : 1px 1px 5px 1px #b4b4b4;
+        }
+
+        .dark{
+            --primary-background-color : rgb(0, 0, 0);
+            --secondary-background-color : rgb(32, 32, 32);
+            --primary-text-color : rgb(255, 255, 255);
+            --primary-blog-text-color : #e8e8e8;
+            --secondary-blog-text-color : rgb(205, 205, 205);
+            --blog-shadow : 1px 1px 5px 1px #565656;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        #outer-button{
+            background-color: var(--button-background-color);
+        }
+        #button-container{
+            display: flex;
+            justify-content: end;
+        }
+        #button{
+            background-color: var(--primary-background-color);
+            color: var(--primary-text-color);
+            border: 1px solid;
+            border-color: var(--primary-text-color);
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #button:active{
+            background-color: var(--primary-text-color);
+            color: var(--primary-background-color);
+        }
+        #container{
+            --button-background-color : red;
+            background-color: var(--primary-background-color);
+            padding: 30px;
+            width: 1000px;
+            margin: auto;
+        }
+        #main-heading , .blog-heading , .blog-para{
+            text-align: center;
+        }
+
+        #main-heading{
+            color: var(--primary-text-color);
+        }
+
+        .box{
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+            background-color:var(--secondary-background-color);
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: var(--blog-shadow)
+        }
+
+        .blog-heading{
+            color: var(--primary-blog-text-color);
+        }
+
+        .blog-para{
+            color: var(--secondary-blog-text-color);
+        } */
+
+        #container{
+            /* width: 500px;
+            height: 500px; */
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* background-color: cadetblue; */
+            gap: 1px;
+        }
+
+        .box{
+            height: 300px;
+            background-color: cadetblue;
+        }
+
+        @media screen and (max-width : 768px) {
+            #container{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media screen and (min-width : 768px) and (max-width : 992px) {
+            #container{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+
+        @media screen and (min-width : 500px) and (max-width : 800px ) {
+            /* #container{
+                background-color: red;
+                width: 400px;
+                height: 400px;
+            } */
+        }
+
+        @media screen and (max-width : 500px) {
+            /* #container{
+                background-color: blueviolet;
+                width: 300px;
+                height: 300px;
+            } */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="item-1">Box-1</div>
+        <div class="box" id="item-2">Box-2</div>
+        <div class="box" id="item-3">Box-3</div>
+        <div class="box" id="item-4">Box-4</div>
+        <div class="box" id="item-5">Box-5</div>
+        <div class="box" id="item-6">Box-6</div>
+        <div class="box" id="item-7">Box-7</div>
+        <div class="box" id="item-8">Box-8</div>
+        <div class="box" id="item-9">Box-9</div>
+    </div>
+    <!-- <button id="outer-button">Outer Button</button> -->
+    <!-- <div id="container">
+        <div id="button-container"><button id="button">Dark Mode</button></div>
+        <h1 id="main-heading">Blog Page</h1>
+        <div class="box" id="item-1">
+            <h2 class="blog-heading">Mountains</h2>
+            <p class="blog-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio quo qui aspernatur mollitia nihil, dolore, ipsa dolorem ipsam ex tempora, iure velit omnis. Ad magni harum ab porro vero, qui minus impedit neque. Vel est velit tempora aliquid cupiditate maiores explicabo expedita quos recusandae repellat architecto quae aspernatur quod, reprehenderit molestias nesciunt repudiandae ullam eveniet consequatur adipisci voluptate. Voluptatibus.</p>
+        </div>
+        <div class="box" id="item-2">
+            <h2 class="blog-heading">Beaches</h2>
+            <p class="blog-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eius. Asperiores exercitationem dignissimos cum tenetur doloribus, deserunt perferendis eum aperiam consequatur itaque nulla! Vero rerum provident sequi, quasi quis quos nobis enim! Voluptatibus eos molestias corrupti architecto beatae nisi fuga a quas nam omnis. Incidunt consequatur mollitia, maiores placeat praesentium quae asperiores. Praesentium non repudiandae sint distinctio amet magnam iusto.</p>
+        </div>
+        <div class="box" id="item-3">
+            <h2 class="blog-heading">Waterfalls</h2>
+            <p class="blog-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius amet harum illum ad sunt molestias quas. Accusamus nemo quae nihil, magnam saepe qui sapiente numquam! Alias libero, deserunt expedita ut error id dolor saepe sit exercitationem est commodi aperiam voluptatibus sequi blanditiis perspiciatis assumenda quam minima quas hic! Quis reiciendis accusamus dolorem similique delectus, neque omnis explicabo distinctio blanditiis in!</p>
+        </div>
+    </div>
+
+    <script>
+        let isDark = false;
+        document.getElementById("button").addEventListener("click",function(){
+            
+            if(isDark){
+                document.body.className = "";
+            document.getElementById("button").innerHTML = "Dark Mode";
+            isDark = false;
+            }else{
+                document.body.className = "dark";
+            document.getElementById("button").innerHTML = "Light Mode";
+            isDark = true;
+            }
+            
+        })
+    </script> -->
+</body>
+</html>
