@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div id="logo">
+                <h2>Logo</h2>
+            </div>
+            <div id="menu-list">
+                <div class="menu-item">
+                    <p>Dashboard</p>
+                </div>
+                <div class="menu-item">
+                    <p>
+                        User
+                    </p>
+                </div>
+                <div class="menu-item">
+                    <p>Product</p>
+                </div>
+                <div class="menu-item">
+                    <p>Order</p>
+                </div>
+            </div>
+        </div>
+        <div id="middle">
+            <div id="heading">
+                <h2>Products</h2>
+            </div>
+            <div id="button"><button id="add-product">Add Product</button></div>
+        </div>
+        <div id="products">
+            <table id="product-table">
+                <thead id="">
+                    <tr id="product-table-header">
+                        <th>S.No.</th>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Categroy</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="product-table-body"></tbody>
+            </table>
+        </div>
+        
+    </div>
+    <div id="modal">
+        <div id="add-product-modal">
+            <div id="add-product-modal-header">
+                <h2>Add Product</h2>
+                <button id="close-modal-button">X</button>
+            </div>
+            <form id="product-form" >
+                <div id="product-form-container">
+                    <div>
+                        <input type="text" placeholder="Product Name" id="product-name" class="add-product-input">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Product Price" id="product-price" class="add-product-input">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Product Description" id="product-description" class="add-product-input">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Product Category" id="product-category" class="add-product-input">
+                    </div>
+                    <div id="button-container">
+                        <button type="submit" id="add-product-submit-button">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
